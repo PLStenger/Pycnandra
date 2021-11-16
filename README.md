@@ -14,6 +14,6 @@ First, open your terminal. Then, run these two command lines :
     /scratch_vol1/fungi
 
     cd -place_in_your_local_computer
-    git clone https://github.com/PLStenger/Araucaria_columnaris_diversity.git
+    git clone https://github.com/PLStenger/Pycnandra.git
 
 </details> 
