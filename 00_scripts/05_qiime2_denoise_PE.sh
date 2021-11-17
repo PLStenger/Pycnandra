@@ -54,10 +54,10 @@ qiime dada2 denoise-paired --i-demultiplexed-seqs core/demux.qza \
 ##################################################################
 # Negative control
 ##################################################################
-qiime dada2 denoise-paired --i-demultiplexed-seqs core/demux.qza \
---o-table core/Table.qza  \
---o-representative-sequences core/RepSeq.qza \
---o-denoising-stats core/Stats.qza \
+qiime dada2 denoise-paired --i-demultiplexed-seqs core/demux_neg.qza \
+--o-table core/Table_neg.qza  \
+--o-representative-sequences core/RepSeq_neg.qza \
+--o-denoising-stats core/Stats_neg.qza \
 --p-trim-left-f 0 \
 --p-trim-left-r 0 \
 --p-trunc-len-f 0 \
@@ -77,7 +77,7 @@ qiime dada2 denoise-paired --i-demultiplexed-seqs core/demux.qza \
 # Here --i-reference-sequences correspond to the negative control sample (if you don't have any, like here, take another one from an old project, the one here is from the same sequencing line (but not same project))
 
 qiime quality-control exclude-seqs --i-query-sequences core/RepSeq.qza \
-      					     --i-reference-sequences /scratch_vol1/fungi/Pycnandra/98_database_files/ITS2/Negative_control_Sample_RepSeq_ITS2.qza\
+      					     --i-reference-sequences core/RepSeq_neg.qza\
       					     --p-method vsearch \
       					     --p-threads 6 \
       					     --p-perc-identity 1.00 \
@@ -185,6 +185,19 @@ qiime dada2 denoise-paired --i-demultiplexed-seqs core/demux.qza \
 --p-trunc-len-r 0 \
 --p-n-threads 4  
 
+##################################################################
+# Negative control
+##################################################################
+qiime dada2 denoise-paired --i-demultiplexed-seqs core/demux_neg.qza \
+--o-table core/Table_neg.qza  \
+--o-representative-sequences core/RepSeq_neg.qza \
+--o-denoising-stats core/Stats_neg.qza \
+--p-trim-left-f 0 \
+--p-trim-left-r 0 \
+--p-trunc-len-f 0 \
+--p-trunc-len-r 0 \
+--p-n-threads 4   
+
 # sequence_contamination_filter :
 #################################
 
@@ -195,7 +208,7 @@ qiime dada2 denoise-paired --i-demultiplexed-seqs core/demux.qza \
 # Here --i-reference-sequences correspond to the negative control sample (if you don't have any, like here, take another one from an old project, the one here is from the same sequencing line (but not same project))
 
 qiime quality-control exclude-seqs --i-query-sequences core/RepSeq.qza \
-      					     --i-reference-sequences /scratch_vol1/fungi/Pycnandra/98_database_files/V4/Negative_control_Sample_RepSeq_V4.qza \
+      					     --i-reference-sequences core/RepSeq_neg.qza \
       					     --p-method vsearch \
       					     --p-threads 6 \
       					     --p-perc-identity 1.00 \
