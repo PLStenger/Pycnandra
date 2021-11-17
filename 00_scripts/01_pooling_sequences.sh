@@ -25,14 +25,45 @@ mkdir -p $OUTPUT_16S
 
 cd $DATADIRECTORY_16S
 
-  cat Pa-1-5-1_S106_L001_I1_001.fastq.gz Pa-1-5-1_S106_L001_R1_001.fastq.gz > $OUTPUT_16S/Pa-1-5-1_S106_R1.fastq.gz
-  cat Pa-1-5-1_S106_L001_R2_001.fastq.gz Pa-1-5-1_S106_L001_I2_001.fastq.gz > $OUTPUT_16S/Pa-1-5-1_S106_R2.fastq.gz
-cat Pa-1-10-1_S107_L001_I1_001.fastq.gz Pa-1-10-1_S107_L001_R1_001.fastq.gz > $OUTPUT_16S/Pa-1-10-1_S107_R1.fastq.gz
-cat Pa-1-10-1_S107_L001_R2_001.fastq.gz Pa-1-10-1_S107_L001_I2_001.fastq.gz > $OUTPUT_16S/Pa-1-10-1_S107_R2.fastq.gz
+# Pour une raison encore incconue : 
+# 
+# Pa-1-10-1_S107_L001_R1_001_fastqc bon
+# Pa-1-10-1_S107_L001_I2_001_fastqc pas bon
+# Pa-1-10-1_S107_L001_I1_001_fastqc pas bon
+# Pa-1-10-1_S107_L001_R2_001_fastqc bon 
+# 
+# Pa-1-5-1_S106_L001_I1_001_fastqc pas bon
+# Pa-1-5-1_S106_L001_I2_001_fastqc pas bon
+# Pa-1-5-1_S106_L001_R1_001_fastqc bon
+# Pa-1-5-1_S106_L001_R2_001_fastqc bon
+# 
+# Pa-2-10-1_S109_L001_I1_001_fastqc pas bon
+# Pa-2-10-1_S109_L001_I2_001_fastqc pas bon
+# Pa-2-10-1_S109_L001_R1_001_fastqc bon
+# Pa-2-10-1_S109_L001_R2_001_fastqc bon
+
+#  cat Pa-1-5-1_S106_L001_I1_001.fastq.gz Pa-1-5-1_S106_L001_R1_001.fastq.gz > $OUTPUT_16S/Pa-1-5-1_S106_R1.fastq.gz
+#  cat Pa-1-5-1_S106_L001_R2_001.fastq.gz Pa-1-5-1_S106_L001_I2_001.fastq.gz > $OUTPUT_16S/Pa-1-5-1_S106_R2.fastq.gz
+
+  cat Pa-1-5-1_S106_L001_R1_001.fastq.gz > $OUTPUT_16S/Pa-1-5-1_S106_R1.fastq.gz
+  cat Pa-1-5-1_S106_L001_R2_001.fastq.gz > $OUTPUT_16S/Pa-1-5-1_S106_R2.fastq.gz
+
+
+# cat Pa-1-10-1_S107_L001_I1_001.fastq.gz Pa-1-10-1_S107_L001_R1_001.fastq.gz > $OUTPUT_16S/Pa-1-10-1_S107_R1.fastq.gz
+# cat Pa-1-10-1_S107_L001_R2_001.fastq.gz Pa-1-10-1_S107_L001_I2_001.fastq.gz > $OUTPUT_16S/Pa-1-10-1_S107_R2.fastq.gz
+
+cat Pa-1-10-1_S107_L001_R1_001.fastq.gz > $OUTPUT_16S/Pa-1-10-1_S107_R1.fastq.gz
+cat Pa-1-10-1_S107_L001_R2_001.fastq.gz > $OUTPUT_16S/Pa-1-10-1_S107_R2.fastq.gz
+
   cat Pa-2-5-1_S108_L001_I1_001.fastq.gz Pa-2-5-1_S108_L001_R1_001.fastq.gz > $OUTPUT_16S/Pa-2-5-1_S108_R1.fastq.gz
   cat Pa-2-5-1_S108_L001_I2_001.fastq.gz Pa-2-5-1_S108_L001_R2_001.fastq.gz > $OUTPUT_16S/Pa-2-5-1_S108_R2.fastq.gz
-cat Pa-2-10-1_S109_L001_I1_001.fastq.gz Pa-2-10-1_S109_L001_R1_001.fastq.gz > $OUTPUT_16S/Pa-2-10-1_S109_R1.fastq.gz
-cat Pa-2-10-1_S109_L001_R2_001.fastq.gz Pa-2-10-1_S109_L001_I2_001.fastq.gz > $OUTPUT_16S/Pa-2-10-1_S109_R2.fastq.gz
+  
+# cat Pa-2-10-1_S109_L001_I1_001.fastq.gz Pa-2-10-1_S109_L001_R1_001.fastq.gz > $OUTPUT_16S/Pa-2-10-1_S109_R1.fastq.gz
+# cat Pa-2-10-1_S109_L001_R2_001.fastq.gz Pa-2-10-1_S109_L001_I2_001.fastq.gz > $OUTPUT_16S/Pa-2-10-1_S109_R2.fastq.gz
+
+cat Pa-2-10-1_S109_L001_R1_001.fastq.gz > $OUTPUT_16S/Pa-2-10-1_S109_R1.fastq.gz
+cat Pa-2-10-1_S109_L001_R2_001.fastq.gz > $OUTPUT_16S/Pa-2-10-1_S109_R2.fastq.gz
+
   cat Pa-3-5-1_S110_L001_I1_001.fastq.gz Pa-3-5-1_S110_L001_R1_001.fastq.gz > $OUTPUT_16S/Pa-3-5-1_S110_R1.fastq.gz
   cat Pa-3-5-1_S110_L001_I2_001.fastq.gz Pa-3-5-1_S110_L001_R2_001.fastq.gz > $OUTPUT_16S/Pa-3-5-1_S110_R2.fastq.gz
 cat Pa-3-10-1_S119_L001_I1_001.fastq.gz Pa-3-10-1_S119_L001_R1_001.fastq.gz > $OUTPUT_16S/Pa-3-10-1_S119_R1.fastq.gz
