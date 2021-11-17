@@ -7,8 +7,8 @@ DATADIRECTORY_16S=/scratch_vol1/fungi/Pycnandra/03_cleaned_data/DATAOUTPUT_16S
 OUTPUT_ITS=/scratch_vol1/fungi/Pycnandra/05_QIIME2/ITS
 OUTPUT_16S=/scratch_vol1/fungi/Pycnandra/05_QIIME2/16S
 
-MANIFEST_FUNGI=/scratch_vol1/fungi/Pycnandra/98_database_files/ITS2/manifest_cluster
-MANIFEST_BACTERIA=/scratch_vol1/fungi/Pycnandra/98_database_files/V4/manifest_cluster
+MANIFEST_FUNGI=/scratch_vol1/fungi/Pycnandra/98_database_files/manifest_cluster
+MANIFEST_BACTERIA=/scratch_vol1/fungi/Pycnandra/98_database_files/manifest_cluster
 
 # pathways in local:
 #DATADIRECTORY_ITS=/Users/pierre-louisstenger/Documents/PostDoc_02_MetaBarcoding_IAC/02_Data/20_Pycnandra/Pycnandra/03_cleaned_data/DATAOUTPUT_ITS
