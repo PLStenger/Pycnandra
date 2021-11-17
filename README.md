@@ -30,5 +30,12 @@ First, open your terminal. Then, run these two command lines :
     >sys	1m18,931s
   
     time nohup bash 01_pooling_sequences.sh &> 01_pooling_sequences.out
+    >real	0m2,227s
+    >user	0m0,139s
+    >sys	0m2,081s
+
+  
+    time nohup bash 02_trimmomatic_q30.sh &> 02_trimmomatic_q30.out
+
   
 </details> 
