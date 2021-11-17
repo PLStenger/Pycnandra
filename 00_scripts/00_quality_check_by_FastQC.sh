@@ -7,10 +7,10 @@
 
 # pathways in cluster:
 WORKING_DIRECTORY=/scratch_vol1/fungi/Pycnandra
-DATA_DIRECTORY_ITS=/scratch_vol1/fungi/Pycnandra/00_raw_data/ITS
-DATA_DIRECTORY_16S=/scratch_vol1/fungi/Pycnandra/00_raw_data/16S
-OUT_PUT_ITS=/scratch_vol1/fungi/Pycnandra/01_quality_check/OUT_PUT_ITS
-OUT_PUT_16S=/scratch_vol1/fungi/Pycnandra/01_quality_check/OUT_PUT_16S
+DATA_DIRECTORY_ITS=/scratch_vol1/fungi/Pycnandra/01_raw_data/ITS
+DATA_DIRECTORY_16S=/scratch_vol1/fungi/Pycnandra/01_raw_data/16S
+OUT_PUT_ITS=/scratch_vol1/fungi/Pycnandra/02_quality_check/OUT_PUT_ITS
+OUT_PUT_16S=/scratch_vol1/fungi/Pycnandra/02_quality_check/OUT_PUT_16S
 
 # pathways in local:
 #WORKING_DIRECTORY=/Users/pierre-louisstenger/Documents/PostDoc_02_MetaBarcoding_IAC/02_Data/20_Pycnandra/Pycnandra
@@ -24,7 +24,14 @@ conda activate fastqc
 
 cd $WORKING_DIRECTORY
 
+# Make the directory (mkdir) only if not existe already(-p)
+mkdir -p 02_quality_check/OUT_PUT_ITS
+mkdir -p 02_quality_check/OUT_PUT_16S
+
+################################################################
 # For ITS
+################################################################
+
 for FILE in $(ls $DATA_DIRECTORY_ITS/*.fastq.gz)
 do
       fastqc $FILE -o $OUT_PUT_ITS
@@ -40,7 +47,10 @@ multiqc $OUT_PUT_ITS
 conda deactivate multiqc
 conda activate fastqc
 
+################################################################
 # For 16S
+################################################################
+
 for FILE in $(ls $DATA_DIRECTORY_16S/*.fastq.gz)
 do
       fastqc $FILE -o $OUT_PUT_16S
