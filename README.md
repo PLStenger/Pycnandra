@@ -33,9 +33,13 @@ First, open your terminal. Then, run these two command lines :
     >real	0m2,227s
     >user	0m0,139s
     >sys	0m2,081s
-
   
     time nohup bash 02_trimmomatic_q30.sh &> 02_trimmomatic_q30.out
+    >real	14m42,465s
+    >user	112m16,534s
+    >sys	4m31,750s
+
+    time nohup bash 03_cleaned_data_quality_check_by_FastQC.sh &> 03_cleaned_data_quality_check_by_FastQC.out
 
   
 </details> 
