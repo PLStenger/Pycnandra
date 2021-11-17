@@ -41,5 +41,7 @@ First, open your terminal. Then, run these two command lines :
 
     time nohup bash 03_cleaned_data_quality_check_by_FastQC.sh &> 03_cleaned_data_quality_check_by_FastQC.out
 
+    time nohup bash 04_qiime2_import_PE.sh &> 04_qiime2_import_PE.out
+
   
 </details> 
