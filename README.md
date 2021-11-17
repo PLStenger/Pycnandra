@@ -40,8 +40,12 @@ First, open your terminal. Then, run these two command lines :
     >sys	4m31,750s
 
     time nohup bash 03_cleaned_data_quality_check_by_FastQC.sh &> 03_cleaned_data_quality_check_by_FastQC.out
+    >real	14m36,768s
+    >user	22m51,308s
+    >sys	1m8,843s
 
     time nohup bash 04_qiime2_import_PE.sh &> 04_qiime2_import_PE.out
+    >
 
   
 </details> 
