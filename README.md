@@ -24,6 +24,9 @@ First, open your terminal. Then, run these two command lines :
 
 <details>
   
+    # For run all pipeline, lunch only this command line : 
+    time nohup bash 000_run_all_pipeline_in_one_script.sh &> 000_run_all_pipeline_in_one_script.out
+  
     time nohup bash 00_quality_check_by_FastQC.sh &> 00_quality_check_by_FastQC.out
     >real	15m57,102s
     >user	25m7,809s
