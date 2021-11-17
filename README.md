@@ -25,5 +25,8 @@ First, open your terminal. Then, run these two command lines :
 <details>
   
     time nohup bash 00_quality_check_by_FastQC.sh &> 00_quality_check_by_FastQC.out
+    >real	15m57,102s
+    >user	25m7,809s
+    >sys	1m18,931s
   
 </details> 
