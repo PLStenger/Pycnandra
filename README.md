@@ -17,3 +17,13 @@ First, open your terminal. Then, run these two command lines :
     git clone https://github.com/PLStenger/Pycnandra.git
 
 </details> 
+
+
+
+### Running pipeline :
+
+<details>
+  
+    time nohup bash 00_quality_check_by_FastQC.sh &> 00_quality_check_by_FastQC.out
+  
+</details> 
