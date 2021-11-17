@@ -48,7 +48,11 @@ First, open your terminal. Then, run these two command lines :
     >sys	1m8,843s
 
     time nohup bash 04_qiime2_import_PE.sh &> 04_qiime2_import_PE.out
-    >
+    >real    2m7,230s
+    >user    2m14,750s
+    >sys     0m29,133s
 
+    time nohup bash 05_qiime2_denoise_PE.sh &> 05_qiime2_denoise_PE.out
+  
   
 </details> 
