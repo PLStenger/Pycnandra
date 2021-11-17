@@ -29,4 +29,6 @@ First, open your terminal. Then, run these two command lines :
     >user	25m7,809s
     >sys	1m18,931s
   
+    time nohup bash 01_pooling_sequences.sh &> 01_pooling_sequences.out
+  
 </details> 
