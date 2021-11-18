@@ -207,8 +207,20 @@ conda activate qiime2-2021.4
 
 # Here --i-reference-sequences correspond to the negative control sample (if you don't have any, like here, take another one from an old project, the one here is from the same sequencing line (but not same project))
 
+
+######### aqiime quality-control exclude-seqs --i-query-sequences core/RepSeq.qza \
+######### a --i-reference-sequences core/RepSeq_neg.qza \
+######### a --p-method vsearch \
+######### a --p-threads 6 \
+######### a --p-perc-identity 1.00 \
+######### a --p-perc-query-aligned 1.00 \
+######### a --o-sequence-hits core/HitNegCtrl.qza \
+######### a --o-sequence-misses core/NegRepSeq.qza
+
+/scratch_vol1/fungi/Diversity_in_Mare_yam_crop/98_database_files/V4/Negative_control_Sample_RepSeq_V4.qza
+
 qiime quality-control exclude-seqs --i-query-sequences core/RepSeq.qza \
- --i-reference-sequences core/RepSeq_neg.qza \
+ --i-reference-sequences /scratch_vol1/fungi/Diversity_in_Mare_yam_crop/98_database_files/V4/Negative_control_Sample_RepSeq_V4.qza \
  --p-method vsearch \
  --p-threads 6 \
  --p-perc-identity 1.00 \
