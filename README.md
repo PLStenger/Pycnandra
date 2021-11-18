@@ -58,7 +58,12 @@ First, open your terminal. Then, run these two command lines :
     >
   
     time nohup bash 06_qiime2_tree_PE.sh &> 06_qiime2_tree_PE.out
-    >
+    >real	2m22,561s
+    >user	2m33,893s
+    >sys	0m31,216s
+  
+    time nohup bash 07_qiime2_rarefaction_PE.sh &> 07_qiime2_rarefaction_PE.out
+  
   
   
 </details> 
