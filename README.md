@@ -63,7 +63,12 @@ First, open your terminal. Then, run these two command lines :
     >sys	0m31,216s
   
     time nohup bash 07_qiime2_rarefaction_PE.sh &> 07_qiime2_rarefaction_PE.out
+    >real	1m28,392s
+    >user	3m26,301s
+    >sys	0m19,600s
   
+    time nohup bash 08_qiime2_calculate_and_explore_diversity_metrics_PE.sh &> 08_qiime2_calculate_and_explore_diversity_metrics_PE.out
+    >
   
   
 </details> 
