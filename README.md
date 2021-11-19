@@ -68,11 +68,16 @@ First, open your terminal. Then, run these two command lines :
     >sys	0m19,600s
   
     time nohup bash 08_qiime2_calculate_and_explore_diversity_metrics_PE.sh &> 08_qiime2_calculate_and_explore_diversity_metrics_PE.out
-    >
+    >real	8m36,459s
+    >user	9m49,463s
+    >sys	3m16,677s
   
     time nohup bash 09_core_biom_PE.sh &> 09_core_biom_PE.out
-    >
+    >real	0m40,582s
+    >user	0m50,942s
+    >sys	0m19,471s
   
+    time nohup bash 10_qiime2_assign_taxonomy_PE.sh &> 10_qiime2_assign_taxonomy_PE.out
   
   
 </details> 
