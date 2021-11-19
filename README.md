@@ -78,6 +78,9 @@ First, open your terminal. Then, run these two command lines :
     >sys	0m19,471s
   
     time nohup bash 10_qiime2_assign_taxonomy_PE.sh &> 10_qiime2_assign_taxonomy_PE.out
-  
+    --> Only 16S
+    >real	113m42,146s
+    >user	111m46,223s
+    >sys	2m13,714s
   
 </details> 
