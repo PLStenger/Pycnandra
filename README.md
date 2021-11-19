@@ -70,5 +70,9 @@ First, open your terminal. Then, run these two command lines :
     time nohup bash 08_qiime2_calculate_and_explore_diversity_metrics_PE.sh &> 08_qiime2_calculate_and_explore_diversity_metrics_PE.out
     >
   
+    time nohup bash 09_core_biom_PE.sh &> 09_core_biom_PE.out
+    >
+  
+  
   
 </details> 
