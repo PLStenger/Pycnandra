@@ -53,6 +53,16 @@ echo $TMPDIR
 
 #df -h
 
+
+# NEW DATABASE UNITE :
+# sh_taxonomy_qiime_ver8_dynamic_s_10.05.2021.txt
+# sh_refs_qiime_ver8_dynamic_s_10.05.2021.fasta
+# from https://plutof.ut.ee/#/doi/10.15156/BIO/1264763
+# Originaly from https://unite.ut.ee/repository.php
+# When using this resource, please cite it as follows:
+# Abarenkov, Kessy; Zirk, Allan; Piirmann, Timo; Pöhönen, Raivo; Ivanov, Filipp; Nilsson, R. Henrik; Kõljalg, Urmas (2021): UNITE QIIME release for Fungi 2. Version 10.05.2021. UNITE Community. https://doi.org/10.15156/BIO/1264763 
+# Includes global and 97% singletons.
+
 # OLD = /scratch_vol1/fungi/Diversity_in_Mare_yam_crop/98_database_files/ITS2/Taxonomy-UNITE-V7-S-2017.12.01-dynamic.txt
 
 qiime tools import --type 'FeatureData[Taxonomy]' \
