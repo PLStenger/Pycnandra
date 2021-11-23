@@ -175,29 +175,29 @@ conda activate qiime2-2021.4
 
 # https://github.com/benjjneb/dada2/issues/477
 
-#qiime dada2 denoise-paired --i-demultiplexed-seqs core/demux.qza \
-#--o-table core/Table.qza  \
-#--o-representative-sequences core/RepSeq.qza \
-#--o-denoising-stats core/Stats.qza \
-#--p-trim-left-f 0 \
-#--p-trim-left-r 0 \
-#--p-trunc-len-f 0 \
-#--p-trunc-len-r 0 \
-#--p-n-threads 4  
-#
-###################################################################
-## Negative control
-###################################################################
-#qiime dada2 denoise-paired --i-demultiplexed-seqs core/demux_neg.qza \
-#--o-table core/Table_neg.qza  \
-#--o-representative-sequences core/RepSeq_neg.qza \
-#--o-denoising-stats core/Stats_neg.qza \
-#--p-trim-left-f 0 \
-#--p-trim-left-r 0 \
-#--p-trunc-len-f 0 \
-#--p-trunc-len-r 0 \
-#--p-n-threads 4   
-#
+qiime dada2 denoise-paired --i-demultiplexed-seqs core/demux.qza \
+--o-table core/Table.qza  \
+--o-representative-sequences core/RepSeq.qza \
+--o-denoising-stats core/Stats.qza \
+--p-trim-left-f 0 \
+--p-trim-left-r 0 \
+--p-trunc-len-f 0 \
+--p-trunc-len-r 0 \
+--p-n-threads 4  
+
+##################################################################
+# Negative control
+##################################################################
+qiime dada2 denoise-paired --i-demultiplexed-seqs core/demux_neg.qza \
+--o-table core/Table_neg.qza  \
+--o-representative-sequences core/RepSeq_neg.qza \
+--o-denoising-stats core/Stats_neg.qza \
+--p-trim-left-f 0 \
+--p-trim-left-r 0 \
+--p-trunc-len-f 0 \
+--p-trunc-len-r 0 \
+--p-n-threads 4   
+
 # sequence_contamination_filter :
 #################################
 
@@ -217,7 +217,7 @@ conda activate qiime2-2021.4
 ######### a --o-sequence-hits core/HitNegCtrl.qza \
 ######### a --o-sequence-misses core/NegRepSeq.qza
 
-/scratch_vol1/fungi/Diversity_in_Mare_yam_crop/98_database_files/V4/Negative_control_Sample_RepSeq_V4.qza
+# /scratch_vol1/fungi/Diversity_in_Mare_yam_crop/98_database_files/V4/Negative_control_Sample_RepSeq_V4.qza
 
 qiime quality-control exclude-seqs --i-query-sequences core/RepSeq.qza \
  --i-reference-sequences /scratch_vol1/fungi/Diversity_in_Mare_yam_crop/98_database_files/V4/Negative_control_Sample_RepSeq_V4.qza \
