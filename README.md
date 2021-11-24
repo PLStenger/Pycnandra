@@ -1,6 +1,7 @@
 # Pycnandra
 
-
+Pycnandra acuminata https://endemia.nc/flore/fiche1257
+Pycnandra fastuosa https://endemia.nc/flore/fiche1253
 
 ### Installing pipeline :
 
