@@ -104,4 +104,4 @@ biom convert -i export/core/RarTable-all/feature-table.biom -o export/core/RarTa
 
  # Aim: Remove first line and rename '#OTU ID' into 'ASV'
  
- sed '1d ; s/\#OTU ID/ASV_ID/' export/subtables/RarTable-all/table-from-biom.tsv > export/subtables/RarTable-all/ASV.tsv
+ sed '1d ; s/\#OTU ID/ASV_ID/' export/core/RarTable-all/table-from-biom.tsv >export/core/RarTable-all/ASV.tsv
